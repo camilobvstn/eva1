@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-{%load static}
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="{%static 'css/main.css' %"}>
 </head>
 <body>
     <div style="box-shadow: 0px 0px 20px black;width:30%; margin: auto; padding: 20px;">
         <h1>{{nombre}}</h1>
-        <img src="{%static 'img_1}" alt=".">
+        <img id="imagen" style="width: 30%;" src="{%static img_1 %}" alt=".">
         <p>{{desc}}</p>
     </div>
     
